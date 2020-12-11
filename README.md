@@ -4,7 +4,7 @@
 
 ```shell
 $ cd /path/to/Magic/Mirror/modules
-$ git clone https://github.com/cristinabolanospeno/MMM-GrafanaEmbed.git
+$ git clone https://cristinabolanospeno@bitbucket.org/cristibp11/mmm-grafanaembed.git MMM-GrafanaEmbed
 ```
 
 ## Configuration
