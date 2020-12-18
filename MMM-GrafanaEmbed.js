@@ -1,4 +1,4 @@
-Module.register("MMM-GrafanaPanel", {
+Module.register("MMM-GrafanaEmbed", {
   defaults: {
     host: "localhost",
     port: 3000,
@@ -13,7 +13,6 @@ Module.register("MMM-GrafanaPanel", {
     this.dash_to = "now"
   },
   getDom: function () {
-    var wrapper = document.createElement("div");
     var panel = document.createElement("iframe");
     panel.src =
       "http://" +
@@ -37,7 +36,6 @@ Module.register("MMM-GrafanaPanel", {
     panel.width = this.config.width;
     panel.height = this.config.height;
     panel.style = "border: 0px;";
-    wrapper.appendChild(panel);
-    return wrapper;
+    return panel;
   },
 });
