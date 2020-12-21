@@ -1,0 +1,15 @@
+.grafana.row {
+    display: flex;
+}
+
+.grafana.column {
+    flex: auto;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.grafana.panel {
+    border: 0px;
+    width: 25vw;
+    height: 25vh;
+}

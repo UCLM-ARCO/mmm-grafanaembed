@@ -2,6 +2,10 @@
 
 A [MagicMirror²](https://magicmirror.builders/) module for displaying graphs and charts using [Grafana](https://grafana.com/). It is needed a running Grafana instance for this module to work. You can install Grafana following its [official documentation](https://grafana.com/docs/grafana/latest/installation/).
 
+## Screenshots
+
+![MMM-GrafanaEmbed screenshot](/public/mmm-grafanaembed.png)
+
 ## Installation
 
 ```shell
@@ -33,11 +37,11 @@ modules: [
             dash_id: 'c9b38467',                // Dashboard id
             dash_name: 'mi-band-data-user-1',   // Dashboard name 
             dash_orgId: 1,                      // Dashboard provider orgId
-            panel_id: 1,                        // Panel id
+            panels: [1],                        // List of panel ids
             dash_refresh: "5m",                 // Refresh interval
             dash_interval: "7d",                // Time range, from now to specified range
-            width: "450",                       // Width of panel
-            height: "200",                      // Height of panel
+            width: "450",                       // Width of panels
+            height: "200",                      // Height of panels
         }
     }
 ]
