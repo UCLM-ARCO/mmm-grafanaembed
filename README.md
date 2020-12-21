@@ -1,10 +1,11 @@
-# MMM-GrafanaPanel
+# MMM-GrafanaEmbed
+
+A [MagicMirror²](https://magicmirror.builders/) module for displaying graphs and charts using [Grafana](https://grafana.com/). It is needed a running Grafana instance for this module to work. You can install Grafana following its [official documentation](https://grafana.com/docs/grafana/latest/installation/).
 
 ## Installation
 
 ```shell
-$ cd /path/to/Magic/Mirror/modules
-$ git clone https://cristinabolanospeno@bitbucket.org/cristibp11/mmm-grafanaembed.git MMM-GrafanaEmbed
+$ sudo apt install mmm-grafanaembed
 ```
 
 ## Configuration
@@ -25,7 +26,7 @@ allow_embbeding = true
 modules: [
     {
         module: 'MMM-GrafanaEmbed',
-        position: 'top-left',
+        position: 'top_left',
         config: {
             host: "localhost",                  // Host where Grafana is running
             port: 3000,                         // Port where Grafana is running

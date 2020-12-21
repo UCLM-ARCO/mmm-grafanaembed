@@ -1,0 +1,15 @@
+Source: mmm-grafanaembed
+Section: utils
+Priority: optional
+Maintainer: Cristina Bolaños Peño <Cristina.Bolanos@uclm.es>
+Build-Depends: debhelper (>= 12),
+ quilt
+Standards-Version: 4.5.0
+
+Package: mmm-grafanaembed
+Architecture: all
+Depends: ${misc:Depends}
+Description: Magic Mirror module for Grafana graphs
+ A Magic Mirror module for displaying graphs and charts using
+ Grafana. It is needed a running Grafana instance for this module
+ to work.
