@@ -1,1 +1,2 @@
-MMM-GrafanaEmbed.js /opt/MagicMirror/modules/MMM-GrafanaEmbed
+MMM-GrafanaEmbed.js /usr/share/magicmirror/modules/MMM-GrafanaEmbed
+css/* /usr/share/magicmirror/modules/MMM-GrafanaEmbed/css
