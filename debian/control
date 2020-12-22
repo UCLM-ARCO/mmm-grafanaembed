@@ -4,10 +4,10 @@ Priority: optional
 Maintainer: Cristina Bolaños Peño <Cristina.Bolanos@uclm.es>
 Build-Depends: debhelper (>= 12),
  quilt
-Standards-Version: 4.5.0
+Standards-Version: 4.3.0
 
 Package: mm2-grafanaembed
-Architecture: all
+Architecture: armhf
 Depends: ${misc:Depends},
  magic-mirror-2
 Description: Magic Mirror module for Grafana graphs
