@@ -10,6 +10,6 @@
 
 .grafana.panel {
     border: 0px;
-    width: 25vw;
-    height: 25vh;
+    width: 15vw;
+    padding-top: 75%; /* 4:3 Aspect ratio */
 }
