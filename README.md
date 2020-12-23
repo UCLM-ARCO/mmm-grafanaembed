@@ -9,7 +9,13 @@ A [MagicMirror²](https://magicmirror.builders/) module for displaying graphs an
 ## Installation
 
 ```shell
-$ sudo apt install mmm-grafanaembed
+pi@raspberry:/path/to/MagicMirror/modules/$ git clone https://bitbucket.org/arco_group/mmm-grafanaembed.git MMM-GrafanaEmbed
+```
+
+To install it with Debian package `magic-mirror-2`:
+
+```shell
+pi@raspberry:~/$ sudo apt install mm2-grafanaembed
 ```
 
 ## Configuration
@@ -50,5 +56,7 @@ modules: [
 **Where is my dashboard and panel information?**
 
    There are two diferent type of files when provisioning dashboards to Grafana:
+
    * Dashboard providers: located on which is [Grafana provisioning path](https://grafana.com/docs/grafana/latest/administration/configuration/#provisioning). This holds the `dash_orgId` parameter as `orgId`, and where to look for dashboards definitions with `path` parameter. See [this page](https://grafana.com/docs/grafana/latest/administration/provisioning/#dashboards) for an example of this file.
+   
    * Dashboard definitions: This are JSON files, and they hold `dash_id`, as `uid`, and `dash_name`, as `title`, on the first level object. Then, inside the list `panels`, you can find `panel_id` for each panel object found on it. You can get the JSON definition of a dashboard through the Grafana UI with Share Dashboard > Export > View JSON.
