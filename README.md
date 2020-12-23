@@ -41,13 +41,13 @@ modules: [
             host: "localhost",                  // Host where Grafana is running
             port: 3000,                         // Port where Grafana is running
             dash_id: 'c9b38467',                // Dashboard id
-            dash_name: 'mi-band-data-user-1',   // Dashboard name 
+            dash_name: 'dashboard-name',        // Dashboard name 
             dash_orgId: 1,                      // Dashboard provider orgId
             panels: [1],                        // List of panel ids
             dash_refresh: "5m",                 // Refresh interval
             dash_interval: "7d",                // Time range, from now to specified range
-            width: "450",                       // Width of panels
-            height: "200",                      // Height of panels
+            width: "25vw",                      // Width of panels
+            height: "20vh"                      // Height of panels
         }
     }
 ]

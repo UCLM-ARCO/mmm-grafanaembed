@@ -1,15 +1,16 @@
-.grafana.row {
+.grafana-row {
     display: flex;
 }
 
-.grafana.column {
-    flex: auto;
+.grafana-column {
+    display: table;
     margin-left: 0.5em;
     margin-right: 0.5em;
 }
 
-.grafana.panel {
+.grafana-panel {
     border: 0px;
-    width: 15vw;
-    padding-top: 75%; /* 4:3 Aspect ratio */
+    max-height: 20vh;
+    width: 25vw;
+    height: 20vh;
 }

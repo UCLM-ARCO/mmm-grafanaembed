@@ -4,7 +4,9 @@ Module.register("MMM-GrafanaEmbed", {
     port: 3000,
     dash_orgId: 1,
     dash_refresh: "5m",
-    dash_interval: "7d"
+    dash_interval: "7d",
+    width: "25vw",
+    height: "20vh"
   },
   start: function () {
     this.dash_from = "now-" + this.config.dash_interval
@@ -12,12 +14,12 @@ Module.register("MMM-GrafanaEmbed", {
   },
   getStyles: function () {
     return [
-      this.file("css/style.css")
+      this.file("MMM-GrafanaEmbed.css")
     ]
   },
   getDom: function () {
     var wrapper = document.createElement("div")
-    wrapper.className = "grafana row"
+    wrapper.className = "grafana-row"
     var base_href = "http://" +
       this.config.host +
       ":" +
@@ -36,16 +38,14 @@ Module.register("MMM-GrafanaEmbed", {
       this.dash_to
     for (let index = 0; index < this.config.panels.length; index++) {
       var container = document.createElement("div")
-      container.className = "grafana column"
+      container.className = "grafana-column"
+
       var panel = document.createElement("iframe")
       panel.src = base_href + "&panelId=" + this.config.panels[index]
-      panel.className = "grafana panel"
-      if (this.config.width != undefined && this.config.height != undefined) {
-        panel.width = this.config.width
-        panel.height = this.config.height
-      } else if (this.config.width != undefined || this.config.height != undefined) {
-        Log.error("Width and height must come together. Ignoring those values for panel " + this.config.panels[index] + ".")
-      }
+      panel.className = "grafana-panel"
+      panel.style = "width: " + this.config.width + ";"
+      panel.style += "height: " + this.config.height + ";"
+      
       container.appendChild(panel)
       wrapper.appendChild(container)
     }
